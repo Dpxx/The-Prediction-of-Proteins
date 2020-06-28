@@ -1,0 +1,1 @@
+使用在imagenet上预训练的ResNet50，修改其最后全连接层维数以适应本次任务中的分类标签数，最后使用binary crossentropy作为多标签分类损失函数进行训练
