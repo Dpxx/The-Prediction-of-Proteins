@@ -1,0 +1,1 @@
+Prototypical network的早期版本，在miniImagenet数据集上进行预训练，之后再使指定数据集训练，以达到curriculum learning的目的，由于消耗VRAM过大，故作废
