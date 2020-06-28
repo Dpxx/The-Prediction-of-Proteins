@@ -10,8 +10,6 @@ matplotlib.use("Agg")
 from keras.preprocessing.image import ImageDataGenerator
 from keras.optimizers import Adam
 from keras.preprocessing.image import img_to_array
-# from sklearn.preprocessing import MultiLabelBinarizer
-# from sklearn.model_selection import train_test_split
 from pyimagesearch.smallervggnet import SmallerVGGNet
 import matplotlib.pyplot as plt
 from imutils import paths
@@ -83,13 +81,6 @@ trainX = np.array(trainX, dtype="float") / 255.0
 testX = np.array(testX, dtype="float") / 255.0
 trainY = np.array(trainY)
 testY = np.array(testY)
-
-
-# binarize the labels using scikit-learn's special multi-label
-# binarizer implementation
-print("[INFO] class labels:")
-# mlb = MultiLabelBinarizer()
-# labels = mlb.fit_transform(labels)
 
 # construct the image generator for data augmentation
 aug = ImageDataGenerator(rotation_range=25, width_shift_range=0.1,
